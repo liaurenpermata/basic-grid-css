@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            border: 1px solid black;
+            gap: 5px;
+            height: fit-content;
+            grid-template-rows: minmax(100px, auto);
+            grid-template-columns: minmax(auto, 50%) 1fr 3em;
+        }
+
+        .child {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            /* width: 100%; */
+            /* height: 100%; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, exercitationem totam. Corrupti cum, adipisci voluptatem laborum totam harum non, iste ut in temporibus ab id velit consequatur fugiat aperiam voluptas cumque officia, sapiente ipsa tenetur delectus itaque incidunt amet. Rem libero pariatur provident nostrum accusamus necessitatibus, ratione eligendi nobis excepturi.</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            border: 1px solid black;
+            height: fit-content;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .child {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            height: 100px;
+        }
+
+        /* perhitungan grid row dan column dihitung melalui 
+        
+        * garis tepi pertama dari pinggir kiri tabel untuk row
+        * garis tepi pertama dari atas tabel
+        
+        kedua garis tersebut menjadi garis nomor 1 
+        
+        start artinya mulai kolom/row
+        dan end artinya akhir dari komponen tersebut terbentuk pada kolom/row */
+
+        .child:nth-child(1) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: rgb(130, 234, 112);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+</body>
+</html>
