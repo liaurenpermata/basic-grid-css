@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* grid-template-columns dapat mengatur besar dari sebuah kolom yang ingin diatur, namun jika kita hanya menuliskan 1 value, lalu kita menulis grid-auto-rows maka 1 value tersebut berlaku untuk 1 row saja, sisa row yg lainnya akan mengikuti besaran dari grid-auto-rows(lihat contoh 3) */
+
+        .wrapper1 {
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px;
+            grid-auto-rows: 140px;
+        }
+
+        .child {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+        }
+
+
+        /* ============================================== */
+
+
+        .wrapper2 {
+            margin-top: 50px;
+            display: grid;
+            border: 1px solid black;
+            /* grid-auto-flow: row; */
+            grid-auto-flow: column;
+        }
+
+        .child2 {
+            text-align: center;
+            color: #fff;
+            background-color: green;
+            border: 1px solid black;
+        }
+
+
+        /* ============================================ */
+
+        .wrapper3 {
+            margin-top: 50px;
+            display: grid;
+            border: 1px solid black;
+            grid-auto-flow: column;
+            grid-template-columns: 30px 60px;
+            grid-auto-columns: 1fr;
+        }
+
+        .child3 {
+            text-align: center;
+            color: #fff;
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper1">
+        <div class="child">1</div>
+        <div class="child">2</div>        
+        <div class="child">4</div>
+        <div class="child">3</div>
+    </div>
+    <div class="wrapper2">
+        <div class="child2">1</div>
+        <div class="child2">2</div>        
+        <div class="child2">4</div>
+        <div class="child2">3</div>
+    </div>
+    <div class="wrapper3">
+        <div class="child3">1</div>
+        <div class="child3">2</div>        
+        <div class="child3">4</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>

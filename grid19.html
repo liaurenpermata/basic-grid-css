@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            /* border: 1px solid black;
+            height: fit-content; */
+            border: 1px solid black;
+            grid-template-areas: "content content"
+                                "content content";
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 1fr 1fr; 
+            justify-items: start;
+        }
+
+        .child {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            /* min-height: 100px; */
+            grid-area: content;
+        }
+        
+        
+        /* ================================ */
+        
+        .wrapper2 {
+            display: grid;
+            /* border: 1px solid black;
+            height: fit-content; */
+            border: 1px solid black;
+            grid-template-areas: "content content"
+                                "content content";
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 1fr 1fr; 
+            justify-items: center;
+        }
+
+        .child2 {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            /* min-height: 100px; */
+            grid-area: content;
+        }
+        
+        /* ================================= */
+        
+        .wrapper3 {
+            display: grid;
+            /* border: 1px solid black;
+            height: fit-content; */
+            border: 1px solid black;
+            grid-template-areas: "content content"
+                                "content content";
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 1fr 1fr; 
+            justify-items: end;
+        }
+
+        .child3 {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            /* min-height: 100px; */
+            grid-area: content;
+        }
+
+        /* =================== */
+
+        .wrapper4 {
+            display: grid;
+            /* border: 1px solid black;
+            height: fit-content; */
+            border: 1px solid black;
+            grid-template-areas: "content content"
+                                "content content";
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 1fr 1fr; 
+            justify-items: stretch;
+        }
+
+        .child4 {
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+            border: 1px solid black;
+            /* min-height: 100px; */
+            grid-area: content;
+        }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child">1</div>
+    </div>
+    <div class="wrapper2">
+        <div class="child2">1</div>
+    </div>
+    <div class="wrapper3">
+        <div class="child3">1</div>
+    </div>
+    <div class="wrapper4">
+        <div class="child4">1</div>
+    </div>
+</body>
+</html>
